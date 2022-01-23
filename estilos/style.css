@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: content-box;
+}
+
+
+/*Estilo pagina inicio*/
+.contenedorLogo h1{
+    font-family: "Fredoka One", arial;
+    color: #3DB2FF;
+    width: 250px;
+    display: inline-block;
+    font-size: 70px;
+    letter-spacing: 3px;
+    margin: 35px;
+    text-align: center;
+}
+
+.imagenLogo{
+    display: inline-block;
+    margin-left: 885px;
+    margin-top: 30px;
+}
+
+#logo{
+    width: 100px;
+    border-radius: 50px;
+}
+
+.contenedorMenu li{
+    display: inline-block;
+    margin: 0 60px;
+    font-size: 20px;
+    font-family: "Baloo 2", arial;
+}
+
+.contenedorMenu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedorMenu{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.imagenFondo{
+    display: block;
+    width: 95%;
+    height: 530px;
+    margin: 0 auto;
+    background-color: #3DB2FF;
+}
+
+
+
+article{
+    background-color: #3DB2FF;
+    width: 95%;
+    height: 700px;
+    margin: 0 auto;
+}
+
+article h2{
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 70px;
+    color: #FFEDDA;
+    font-family: "Fredoka One", arial;
+    letter-spacing: 2px;
+}
+
+article p{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 30px;
+    padding: 10px;
+    color: #FFEDDA;
+    text-align: justify;
+    font-family: "Baloo 2", arial;
+    font-size: 24px;
+}
+
+article img{
+    width: 50%;
+    display: block;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.fichasMuestras{
+    background-image: url("../imgenes/fondoRojo.png");
+    margin: 0 auto;
+    width: 95%;
+    height: 500px;
+}
+
+.fichasMuestras img{
+    display: inline-block;
+    width: 350px;
+    position: relative;
+    left: 7%;
+    top: 15%;
+    margin: 0 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+}
+
+footer{
+    background-color: #FFB830;
+    width: 95%;
+    height: 220px;
+    margin: 0 auto;
+}
+
+footer p{
+    color: white; 
+    width: 100px;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a{
+    display: inline-block;
+    width: 5%;
+    padding: 2px;
+    position: relative;
+    left:90%;
+    bottom: 50%;
+    background-color: #dfa300; ;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+}
+
+/*Estilo pagina contenido*/
+
+.contenedorContenido{
+    background-color: #3DB2FF;
+    width: 95%;
+    margin: auto;
+}
+
+.contenedorFlex1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cajaFlex{
+    width: fit-content;
+}
+
+.cajaFlex img{
+    width: 300px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+    display: block;
+}
+
+.cajaFlex a{
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    background-color:#FFB830;
+    font-size: 25px;
+    padding: 5px;
+    font-family:"Fredoka One", arial;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+    display: block;
+}
+
+
+/*Estilo pagina contacto*/
+
+.contenedorPresentacion{
+    background-color: #3DB2FF;
+    width: 95%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.contenedorPresentacion img{
+    width:350px;
+    display: inline-block;
+    position:relative;
+    top: 50px;
+    left: 35%;
+    border-radius: 1000px;
+}
+
+.contenedorPresentacion h2{
+    width: 40%;
+    display: inline-block;
+    position:relative;
+    top: 100px;
+    text-align: center;
+    color: #FFEDDA;
+    font-family: "Fredoka One", arial;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.contenedorPresentacion p{
+    width: 80%;
+    display: inline-block;
+    position:relative;
+    top: 110px;
+    left: 10%;
+    line-height: 30px;
+    color: #FFEDDA;
+    text-align: justify;
+    font-family: "Baloo 2", arial;
+    font-size: 20px;
+}
+
+/*Estilo pagina nosotros*/
+
+#contenedorFormulario h2{
+    width: fit-content;
+    margin: auto;
+    font-size: 45px;
+}
+
+#contenedorFormulario{
+    background-color: #3DB2FF;
+    width: 95%;
+    height: 800px;
+    margin: 0 auto;
+    color: white;
+    font-family:"Baloo 2", arial;
+}
+
+#inputBoton{
+    height: 100px;
+    width: 300px;
+    display: inline-block;
+    position:absolute;
+    left: 39%;
+    top: 850px;
+}
+
+#inputBoton button{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40%;
+    border-radius: 50px;
+}
+
+#inputCorreo{
+    width: 350px;
+    height: 60%;
+    display: inline-block;
+    position: relative;
+    left: 36%;
+    top: 10%;
+}
+
+#inputCorreo label{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#inputCorreo input{
+    width: 100%;
+    height:30px;
+}
+
+#inputCorreo textarea{
+    width: 100%;
+}
+
+/*Estilo pagina empleo*/
+
+.contenedorFlex{
+    background-color: #3DB2FF;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 450px;
+    margin: auto;
+}
+
+#contenedorEncabezado h2{
+    width:fit-content;
+    font-size: 30px;
+    margin: auto;
+    padding: 25px;
+    color: #FFEDDA;
+    font-family: "Fredoka One", arial;
+    letter-spacing: 2px;
+}
+
+#contenedorEncabezado p{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 30px;
+    padding: 10px;
+    color: #FFEDDA;
+    text-align:center;
+    font-family: "Baloo 2", arial;
+    font-size: 24px;
+    margin-bottom:30px;
+}
+
+#contenedorTabla table{
+    border: 1px solid #FFEDDA;
+    width: 80%;
+    margin: auto;
+}
+
+#contenedorTabla table, th, td{
+    border: 1px solid #FFEDDA;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
+
+#contenedorTabla table, th{
+    font-family:"Fredoka One", arial;
+    letter-spacing: 2px;
+}
+
+#contenedorTabla table, td{
+    font-family:"Baloo 2", arial;
+}
+
+
+
+
+
+
+
+
+
+

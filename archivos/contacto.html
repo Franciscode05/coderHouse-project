@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgenes/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <header id="top">
+        <div class="contenedorLogo">
+            <h1>fichitas</h1>
+            <!-- imagen para el logo -->
+            <a class="imagenLogo" href="../index.html"><img id="logo" src="../imgenes/logoFichitas.png" alt="logo de fichitas"></a>
+        </div>
+        <!--Menu de navegación-->
+        <nav>
+            <ul class="contenedorMenu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="contenido.html">Contenido</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="empleo.html">Trabaja con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin Encabezado-->
+
+    <!--Formulario-->
+    <main>
+            <form action="#" method="post" id="contenedorFormulario">
+                <h2>Contáctanos</h2>
+
+                <div id="inputCorreo">
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" name="correo">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    <label for="peticion">Desea recivir nuestros Newsletter</label>
+                    <input type="checkbox" id="peticion" name="peticion" value="true">
+                </div>
+
+                <div id="inputBoton">
+                    <button type="submit" form="contenedorFormulario" value="Submit" >Enviar</button>
+                    <button type="reset" form="contenedorFormulario">Reset</button>
+                </div>
+            </form>
+            
+            
+        <!--fin formulario-->
+    </main>
+
+    <!--pie de pagina-->
+    <footer>
+        <p>&#174; fichitas 2021 por</p>
+        <p>Francisco Reyes Suarez</p>
+        <a href="#top">Subir</a>
+    </footer>
+</body>
+</html>
