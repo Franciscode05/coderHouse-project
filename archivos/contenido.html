@@ -10,66 +10,61 @@
     <title>Contenido</title>
 </head>
 <body>
-     <!--Encabezado-->
-     <header id="top">
-        <div class="contenedorLogo">
-            <h1>fichitas</h1>
-            <!-- imagen para el logo -->
-            <a class="imagenLogo" href="../index.html"><img id="logo" src="../imgenes/logoFichitas.png" alt="logo de fichitas"></a>
-        </div>
-        <!--Menu de navegación-->
-        <nav>
-            <ul class="contenedorMenu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="contenido.html">Contenido</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="empleo.html">Trabaja con nosotros</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Fin Encabezado-->
+    <!--Contenedor Grid-->
+    <div class="contenedorGrid">
+        <!--Encabezado-->
+        <header id="top">
+            <div class="contenedorHeaderFlex">
+                <div class="subcontenedorLogoFlex m">
+                    <h1>fichitas</h1>
+                    <!-- imagen para el logo -->
+                    <a href="../index.html"><img src="../imgenes/logoFichitas.png" alt="logo de fichitas"></a>
+                </div>
+                <!--Menu de navegación-->
+                <div class="subcontenedorMenuFlex m">
+                    <nav>
+                        <a href="../index.html">Inicio</a>
+                        <a href="../archivos/contenido.html">Contenido</a>
+                        <a href="../archivos/nosotros.html">Nosotros</a>
+                        <a href="../archivos/contacto.html">Contacto</a>
+                        <a href="../archivos/empleo.html">Trabaja con nosotros</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--Fin Encabezado-->
 
-    <!--Contenido-->
-    <main class="contenedorContenido">
-        <!--
-        <div class="contenedorContenido">
-            <img src="../imgenes/descargaChicken.png" alt="chick chiken">
-            <img src="../imgenes/descargaBingu.png" alt="Bingu">
-            <img src="../imgenes/descargaKiru.png" alt="Kiru">
-        </div>
-        <div class="contenedorBotones">
-            <a  href="../imgenes/pdfChicken.pdf" download target="_blank">Descargar</a>
-            <a  href="../imgenes/pdfBingu.pdf" download target="_blank">Descargar</a>
-            <a  href="../imgenes/pdfKiru.pdf" download target="_blank">Descargar</a>
-        </div>
-        -->
+        <!--Contenido-->
+        <main>
+            <div class="contenedorFlexHojas">
+                <div class="cajaFlex">
+                    <img src="../imgenes/descargaChicken.png" alt="chick chiken">
+                    <a  href="../imgenes/pdfChicken.pdf" download target="_blank">Descargar</a>
+                </div>
 
-        <div class="contenedorFlex1">
-            <div class="cajaFlex">
-                <img src="../imgenes/descargaChicken.png" alt="chick chiken">
-                <a  href="../imgenes/pdfChicken.pdf" download target="_blank">Descargar</a>
+                <div class="cajaFlex">
+                    <img src="../imgenes/descargaBingu.png" alt="Bingu">
+                    <a  href="../imgenes/pdfBingu.pdf" download target="_blank">Descargar</a>
+                </div>
+                
+                <div class="cajaFlex">
+                    <img src="../imgenes/descargaKiru.png" alt="Kiru">
+                    <a  href="../imgenes/pdfKiru.pdf" download target="_blank">Descargar</a>
+                </div>
             </div>
 
-            <div class="cajaFlex">
-                <img src="../imgenes/descargaBingu.png" alt="Bingu">
-                <a  href="../imgenes/pdfBingu.pdf" download target="_blank">Descargar</a>
-            </div>
-            
-            <div class="cajaFlex">
-                <img src="../imgenes/descargaKiru.png" alt="Kiru">
-                <a  href="../imgenes/pdfKiru.pdf" download target="_blank">Descargar</a>
-            </div>
-        </div>
+        </main>
+        <!--fin contedino-->
 
-    </main>
-    <!--fin contedino-->
-
-    <!--pie de pagina-->
-    <footer>
-        <p>&#174; fichitas 2021 por</p>
-        <p>Francisco Reyes Suarez</p>
-        <a href="#top">Subir</a>
-    </footer>
+        <!--pie de pagina-->
+        <footer>
+            <div class="contenedorFooterFlex">
+                <p>&#174; fichitas 2022</p>
+                <p>por</p>
+                <p>Francisco Reyes Suarez</p>
+                <a href="#top">Subir</a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

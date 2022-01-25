@@ -4,348 +4,335 @@
     box-sizing: content-box;
 }
 
+h1, h2, h3{
+    font-family:"Fredoka One", arial;
+}
+
+p{
+    font-family: "Baloo 2", arial;
+}
+
 
 /*Estilo pagina inicio*/
-.contenedorLogo h1{
-    font-family: "Fredoka One", arial;
-    color: #3DB2FF;
-    width: 250px;
-    display: inline-block;
-    font-size: 70px;
-    letter-spacing: 3px;
-    margin: 35px;
-    text-align: center;
+.contenedorGrid{
+    display: grid;
+    width: 95%;
+    margin:auto;
+    grid-template-columns: repeat(1,1fr);
 }
 
-.imagenLogo{
-    display: inline-block;
-    margin-left: 885px;
-    margin-top: 30px;
+
+.contenedorHeaderFlex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: white;
 }
 
-#logo{
+.subcontenedorLogoFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.subcontenedorLogoFlex h1{
+    color:#3DB2FF;
+    font-size:70px;
+}
+
+.subcontenedorLogoFlex a img{
     width: 100px;
-    border-radius: 50px;
+    border-radius: 100%;
 }
 
-.contenedorMenu li{
-    display: inline-block;
-    margin: 0 60px;
-    font-size: 20px;
-    font-family: "Baloo 2", arial;
+.subcontenedorMenuFlex nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.contenedorMenu li a{
+.subcontenedorMenuFlex nav a{
     text-decoration: none;
     color: black;
+    font-family:"Baloo 2", arial;
+    font-size: 25px;
 }
 
-.contenedorMenu{
+.contenedorMainFlex{
+    display: flex;
+    flex-direction:column;
+}
+
+.subcontenedorMainFlex{
+    display: flex;
+    flex-direction: column;
+    background-color:#3DB2FF;
+}
+
+.subcontenedorMainFlex img{
+    width: 500px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.subcontenedorMainFlex h2{
+    width: fit-content;
+    margin: auto;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 15px;
+    color: white;
+    font-size: 400%;
+    letter-spacing: 3px;
 }
 
-.imagenFondo{
-    display: block;
-    width: 95%;
-    height: 530px;
-    margin: 0 auto;
-    background-color: #3DB2FF;
-}
-
-
-
-article{
-    background-color: #3DB2FF;
-    width: 95%;
-    height: 700px;
-    margin: 0 auto;
-}
-
-article h2{
-    width: 50%;
-    text-align: center;
-    font-size: 50px;
-    margin: 0 auto;
-    padding: 70px;
-    color: #FFEDDA;
-    font-family: "Fredoka One", arial;
-    letter-spacing: 2px;
-}
-
-article p{
+.subcontenedorMainFlex p{
     width: 80%;
-    margin: 0 auto;
-    line-height: 30px;
-    padding: 10px;
-    color: #FFEDDA;
-    text-align: justify;
-    font-family: "Baloo 2", arial;
-    font-size: 24px;
+    margin: auto;
+    text-align:center;
+    color: white;
+    font-size: 150%;
+    padding-bottom: 40px;
 }
 
-article img{
-    width: 50%;
-    display: block;
-    padding-top: 30px;
-    margin: 0 auto;
+.fichasMuestrasFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url(../imgenes/fondoRojo.png);
+
 }
 
-.fichasMuestras{
-    background-image: url("../imgenes/fondoRojo.png");
-    margin: 0 auto;
-    width: 95%;
-    height: 500px;
-}
-
-.fichasMuestras img{
-    display: inline-block;
-    width: 350px;
-    position: relative;
-    left: 7%;
-    top: 15%;
-    margin: 0 10px;
-    border-radius: 20px;
+.fichasMuestrasFlex a img{
+    width: 300px;
+    margin: 30px 0;
+    border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
 }
 
 footer{
     background-color: #FFB830;
-    width: 95%;
-    height: 220px;
-    margin: 0 auto;
 }
 
-footer p{
-    color: white; 
-    width: 100px;
-    padding: 30px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+.contenedorFooterFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+    height: 150px;
+    margin: auto;
+
 }
 
-footer a{
-    display: inline-block;
-    width: 5%;
-    padding: 2px;
-    position: relative;
-    left:90%;
-    bottom: 50%;
-    background-color: #dfa300; ;
+.contenedorFooterFlex p{
+    color: white;
+}
+
+.contenedorFooterFlex a{
+    background-color: #FFEDDA;
+    color: #3DB2FF;
+    font-family:"Fredoka One", arial;
     border-radius: 10px;
     text-align: center;
+    width: 80px;
     text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
 }
 
-/*Estilo pagina contenido*/
 
-.contenedorContenido{
-    background-color: #3DB2FF;
-    width: 95%;
-    margin: auto;
-}
 
-.contenedorFlex1{
+/*estilo pagina contenido*/
+.contenedorFlexHojas{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #3DB2FF;
 }
 
 .cajaFlex{
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cajaFlex img{
     width: 300px;
-    margin: 20px 0;
+    margin-top: 40px ;
+    border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
-    display: block;
 }
 
 .cajaFlex a{
-    text-align: center;
-    margin-bottom: 15px;
+    width: 300px;
     text-decoration: none;
-    background-color:#FFB830;
-    font-size: 25px;
-    padding: 5px;
+    text-align: center;
+    background-color: #FFEDDA;
+    color: #3DB2FF;
     font-family:"Fredoka One", arial;
-    color: white;
-    letter-spacing: 2px;
-    border-radius: 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 40px 0;
     box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
-    display: block;
 }
 
-
-/*Estilo pagina contacto*/
-
+/*estilo pagina Nosotros*/
 .contenedorPresentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #3DB2FF;
-    width: 95%;
-    height: 500px;
-    margin: 0 auto;
 }
 
 .contenedorPresentacion img{
-    width:350px;
-    display: inline-block;
-    position:relative;
-    top: 50px;
-    left: 35%;
-    border-radius: 1000px;
+    width: 500px;
+    border-radius: 600px;
+    margin-top: 30px;
 }
 
 .contenedorPresentacion h2{
-    width: 40%;
-    display: inline-block;
-    position:relative;
-    top: 100px;
-    text-align: center;
+    font-size: 30px;
     color: #FFEDDA;
-    font-family: "Fredoka One", arial;
-    font-size: 40px;
-    letter-spacing: 2px;
+    margin-top: 30px;
 }
 
 .contenedorPresentacion p{
-    width: 80%;
-    display: inline-block;
-    position:relative;
-    top: 110px;
-    left: 10%;
-    line-height: 30px;
-    color: #FFEDDA;
-    text-align: justify;
-    font-family: "Baloo 2", arial;
-    font-size: 20px;
-}
-
-/*Estilo pagina nosotros*/
-
-#contenedorFormulario h2{
-    width: fit-content;
-    margin: auto;
-    font-size: 45px;
-}
-
-#contenedorFormulario{
-    background-color: #3DB2FF;
-    width: 95%;
-    height: 800px;
-    margin: 0 auto;
-    color: white;
-    font-family:"Baloo 2", arial;
-}
-
-#inputBoton{
-    height: 100px;
-    width: 300px;
-    display: inline-block;
-    position:absolute;
-    left: 39%;
-    top: 850px;
-}
-
-#inputBoton button{
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 40%;
-    border-radius: 50px;
-}
-
-#inputCorreo{
-    width: 350px;
-    height: 60%;
-    display: inline-block;
-    position: relative;
-    left: 36%;
-    top: 10%;
-}
-
-#inputCorreo label{
-    display: block;
     text-align: center;
+    color: #FFEDDA;
+    width: 500px;
+    margin:30px 0;
+}
+
+/*estilo pagina Contacto*/
+
+.contenedorFormularioFlex{
+    background-color: #3DB2FF;
+}
+
+#subcontenedorFormulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subcontenedorFormulario h2{
+    margin:10px 0;
+    font-size: 50px;
+    color: #FFEDDA;
+    letter-spacing: 3px;
+}
+
+
+.inputCorreo{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
     margin: 10px 0;
 }
 
-#inputCorreo input{
-    width: 100%;
-    height:30px;
+.inputCorreo label{
+    text-align: center;
 }
 
-#inputCorreo textarea{
-    width: 100%;
-}
-
-/*Estilo pagina empleo*/
-
-.contenedorFlex{
-    background-color: #3DB2FF;
+.inputMensaje{
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: 450px;
-    margin: auto;
+    width: 500px;
+    margin: 10px 0;
 }
 
-#contenedorEncabezado h2{
-    width:fit-content;
-    font-size: 30px;
-    margin: auto;
-    padding: 25px;
-    color: #FFEDDA;
-    font-family: "Fredoka One", arial;
-    letter-spacing: 2px;
-}
-
-#contenedorEncabezado p{
-    width: 80%;
-    margin: 0 auto;
-    line-height: 30px;
-    padding: 10px;
-    color: #FFEDDA;
-    text-align:center;
-    font-family: "Baloo 2", arial;
-    font-size: 24px;
-    margin-bottom:30px;
-}
-
-#contenedorTabla table{
-    border: 1px solid #FFEDDA;
-    width: 80%;
-    margin: auto;
-}
-
-#contenedorTabla table, th, td{
-    border: 1px solid #FFEDDA;
+.inputMensaje label{
     text-align: center;
-    color: white;
-    padding: 3px;
 }
 
-#contenedorTabla table, th{
-    font-family:"Fredoka One", arial;
-    letter-spacing: 2px;
+.inputCheckbox{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    margin: 10px 0;
 }
 
-#contenedorTabla table, td{
-    font-family:"Baloo 2", arial;
+.inputBoton{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.inputBoton button{
+    margin: 10px 0;
+    border-radius: 50px;
+}
+
+/*estilo pagina Empleo*/
+
+.contenedorTablaFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3DB2FF;
+}
+
+.contenedorTablaFlex h2{
+    color: #FFEDDA;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.subcontenedorTabla table, th, td{
+    border: 1px solid #FFEDDA;
+}
+
+.subcontenedorTablaEncabezado p{
+    text-align: center;
+    width: 500px;
+    margin: 20px 0;
+    color: #FFEDDA;
+}
+
+.subcontenedorTabla table{
+    width: 500px;
+    height: 250px;
+    color: #FFEDDA;
+    margin: 20px 0;
+}
+
+.subcontenedorTabla th, td{
+    text-align: center;
 }
 
 
 
 
+/* sección de media*/
+@media(max-width:858px){
+    .subcontenedorMenuFlex nav a{
+        text-decoration: none;
+        color: black;
+        font-family:"Baloo 2", arial;
+        font-size: 19px;
+    }
+    .subcontenedorLogoFlex a img{
+        display: none;
+    }
+    .subcontenedorLogoFlex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
-
-
-
-
-
+    .cajaFlex img{
+        width: 500px;
+        margin-top: 40px ;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+    }
+    
+}
