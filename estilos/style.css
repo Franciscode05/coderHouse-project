@@ -71,7 +71,7 @@ p{
 .subcontenedorMainFlex{
     display: flex;
     flex-direction: column;
-    background-color:#3DB2FF;
+    background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
 .subcontenedorMainFlex img{
@@ -87,6 +87,22 @@ p{
     color: white;
     font-size: 400%;
     letter-spacing: 3px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer{
+    0%{
+        transform: translateY(3px)
+    }
+    50%{
+        transform: translateY(-3px)
+    }
+
+    100%{
+        transform: translateY(3px);
+    }
 }
 
 .subcontenedorMainFlex p{
@@ -112,6 +128,10 @@ p{
     margin: 30px 0;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+}
+
+.fichasMuestrasFlex a img:hover{  
+    transform: translateY(-5px);
 }
 
 footer{
@@ -151,12 +171,12 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #3DB2FF;
+    background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
 .cajaFlex{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 }
 
@@ -180,12 +200,16 @@ footer{
     box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
 }
 
+.cajaFlex a:hover ~ img{
+    transform: translateY(-5px);
+}
+
 /*estilo pagina Nosotros*/
 .contenedorPresentacion{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #3DB2FF;
+    background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
 .contenedorPresentacion img{
@@ -210,7 +234,7 @@ footer{
 /*estilo pagina Contacto*/
 
 .contenedorFormularioFlex{
-    background-color: #3DB2FF;
+    background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
 #subcontenedorFormulario{
@@ -274,7 +298,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #3DB2FF;
+    background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
 .contenedorTablaFlex h2{
