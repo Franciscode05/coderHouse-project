@@ -1,92 +1,28 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: content-box;
+.headerTitulo{
+    font-family:"Fredoka One", arial;
+    color:#3DB2FF
 }
 
-h1, h2, h3{
+.headerLink{
     font-family:"Fredoka One", arial;
 }
 
-p{
-    font-family: "Baloo 2", arial;
-}
-
-
-/*Estilo pagina inicio*/
-.contenedorGrid{
-    display: grid;
-    width: 95%;
-    margin:auto;
-    grid-template-columns: repeat(1,1fr);
-}
-
-
-.contenedorHeaderFlex{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-wrap: wrap;
-    background-color: white;
-}
-
-.subcontenedorLogoFlex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.subcontenedorLogoFlex h1{
-    color:#3DB2FF;
-    font-size:70px;
-}
-
-.subcontenedorLogoFlex a img{
-    width: 100px;
-    border-radius: 100%;
-}
-
-.subcontenedorMenuFlex nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.subcontenedorMenuFlex nav a{
-    text-decoration: none;
-    color: black;
-    font-family:"Baloo 2", arial;
-    font-size: 25px;
-}
-
-.contenedorMainFlex{
-    display: flex;
-    flex-direction:column;
-}
-
-.subcontenedorMainFlex{
-    display: flex;
-    flex-direction: column;
+.mainFondo{
     background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
-.subcontenedorMainFlex img{
-    width: 500px;
-    margin: auto;
-    padding: 50px 0;
+.mainImage{
+    max-width:600px;
 }
 
-.subcontenedorMainFlex h2{
-    width: fit-content;
-    margin: auto;
-    text-align: center;
-    color: white;
-    font-size: 400%;
-    letter-spacing: 3px;
+.fontTexto{
+    font-size: 150%;
+    color: #FFEDDA;
+}
+
+.fontSub{
+    font-family: "Fredoka One", arial;
+    color: #FFEDDA;
     animation-duration: 3s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -105,37 +41,8 @@ p{
     }
 }
 
-.subcontenedorMainFlex p{
-    width: 80%;
-    margin: auto;
-    text-align:center;
-    color: white;
-    font-size: 150%;
-    padding-bottom: 40px;
-}
-
-.fichasMuestrasFlex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.fondoCarrusel{
     background-image: url(../imgenes/fondoRojo.png);
-
-}
-
-.fichasMuestrasFlex a img{
-    width: 300px;
-    margin: 30px 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
-}
-
-.fichasMuestrasFlex a img:hover{  
-    transform: translateY(-5px);
-}
-
-footer{
-    background-color: #FFB830;
 }
 
 .contenedorFooterFlex{
@@ -144,9 +51,12 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     width: fit-content;
-    height: 150px;
+    min-height:230px;
     margin: auto;
+}
 
+footer{
+    background-color: #FFB830;
 }
 
 .contenedorFooterFlex p{
@@ -163,9 +73,8 @@ footer{
     text-decoration: none;
 }
 
+/* pagina Contenido*/
 
-
-/*estilo pagina contenido*/
 .contenedorFlexHojas{
     display: flex;
     flex-direction: row;
@@ -231,132 +140,49 @@ footer{
     margin:30px 0;
 }
 
-/*estilo pagina Contacto*/
-
-.contenedorFormularioFlex{
+/*estilo pagina Nosotros*/
+.contenedorPresentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
-#subcontenedorFormulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contenedorPresentacion img{
+    max-width: 100%;
+    border-radius: 600px;
+    margin-top: 30px;
 }
 
-#subcontenedorFormulario h2{
-    margin:10px 0;
-    font-size: 50px;
+.contenedorPresentacion h2{
+    font-size: 30px;
     color: #FFEDDA;
-    letter-spacing: 3px;
+    margin-top: 30px;
 }
 
-
-.inputCorreo{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 10px 0;
-}
-
-.inputCorreo label{
+.contenedorPresentacion p{
     text-align: center;
-}
-
-.inputMensaje{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 10px 0;
-}
-
-.inputMensaje label{
-    text-align: center;
-}
-
-.inputCheckbox{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.inputBoton{
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-}
-
-.inputBoton button{
-    margin: 10px 0;
-    border-radius: 50px;
+    color: #FFEDDA;
+    max-width: 100%;
+    margin:30px 0;
 }
 
 /*estilo pagina Empleo*/
 
-.contenedorTablaFlex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contenedorTabla{
     background-image: linear-gradient(#3DB2FF, #036db4);
-}
-
-.contenedorTablaFlex h2{
-    color: #FFEDDA;
-    margin: 20px 0;
-    font-size: 40px;
-}
-
-.subcontenedorTabla table, th, td{
-    border: 1px solid #FFEDDA;
-}
-
-.subcontenedorTablaEncabezado p{
-    text-align: center;
-    width: 500px;
-    margin: 20px 0;
     color: #FFEDDA;
 }
 
-.subcontenedorTabla table{
-    width: 500px;
-    height: 250px;
+.contenedorTabla h2{
+    font-family:"Fredoka One", arial; ;
+}
+
+.table th, td{
+    color:#fff;
+}
+
+.btnColor{
+    background: #FFB830;
     color: #FFEDDA;
-    margin: 20px 0;
-}
-
-.subcontenedorTabla th, td{
-    text-align: center;
-}
-
-
-
-
-/* sección de media*/
-@media(max-width:858px){
-    .subcontenedorMenuFlex nav a{
-        text-decoration: none;
-        color: black;
-        font-family:"Baloo 2", arial;
-        font-size: 19px;
-    }
-    .subcontenedorLogoFlex a img{
-        display: none;
-    }
-    .subcontenedorLogoFlex{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .cajaFlex img{
-        width: 500px;
-        margin-top: 40px ;
-        border-radius: 10px;
-        box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
-    }
-    
 }
