@@ -4,90 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="../imgenes/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka+One&display=swap" rel="stylesheet">
     <title>Trabaja con nosotros</title>
 </head>
 <body>
-    <div class="contenedorGrid">
-        <!--Encabezado-->
-        <header id="top">
-            <div class="contenedorHeaderFlex">
-                <div class="subcontenedorLogoFlex m">
-                    <h1>fichitas</h1>
-                    <!-- imagen para el logo -->
-                    <a href="../index.html"><img src="../imgenes/logoFichitas.png" alt="logo de fichitas"></a>
+    <header id="top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand " href="../index.html"><img src="../imgenes/logoFichitas.png" alt="logo fichitas" width="80px" class="rounded-circle "></a>
+                    <h1 class="headerTitulo">fichitas</h1>
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link headerLink fs-5" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link headerLink fs-5" href="./contenido.html">Contenido</a>
+                        </li>
 
-                <!--Menu de navegación-->
-                <div class="subcontenedorMenuFlex m">
-                    <nav>
-                        <a href="../index.html">Inicio</a>
-                        <a href="../archivos/contenido.html">Contenido</a>
-                        <a href="../archivos/nosotros.html">Nosotros</a>
-                        <a href="../archivos/contacto.html">Contacto</a>
-                        <a href="../archivos/empleo.html">Trabaja con nosotros</a>
-                    </nav>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link headerLink fs-5" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link headerLink fs-5" href="./contacto.html">Contacto</a>
+                        </li>
+
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link headerLink fs-5" href="./empleo.html">Trabajo</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </header>
-        <!--Fin Encabezado-->
+        </nav>
+    </header>
 
-        <!--Contenido-->
-        <main class="contenedorTablaFlex">
-            <h2>Posiciones abiertas</h2>
-            <div class="subcontenedorTablaEncabezado">
-                <p>Nuestro objetivo es hacer el mejor contenido con grandes personas. 
+    <main class="subcontenedorTable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center my-3"><h2>Posiciones abiertas</h2></div>
+                <div class="col-12 text-center fs-4"><p>Nuestro objetivo es hacer el mejor contenido con grandes personas. 
                     Estamos orgullosos de nuestra tradición de excelencia creativa y técnica, 
                     siempre estamos buscando personas talentosas para enriquecer nuestro 
                     trabajo y nuestra comunidad. Creemos que es importante reflejar 
                     la diversidad de la sociedad en la que vivimos y las 
                     audiencias mundiales para quienes hacemos nuestro contenido. 
                     ¡Ven a ver lo que tenemos para ofrecer!</p>
+                </div>
             </div>
 
-            <!--Inicio de tabla-->
-            <div class="subcontenedorTabla">
-                <table>
+            <div class="row">
+                <table class="table w-50 mx-auto">
                     <thead>
                         <tr>
-                            <th><h3>Puesto</h3></th>
-                            <th><h3>Locación</h3></th>
-                            <th><h3>ID</h3></th>
+                            <th scope="col" class="fs-4">#</th>
+                            <th scope="col" class="fs-4">Puesto</th>
+                            <th scope="col" class="fs-4">Locación</th>
+                            <th scope="col" class="fs-4">ID</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><p>Diseñador gráfico</p></td>
-                            <td><p>México &#124 Puebla</p></td>
-                            <td><p>178B</p></td>
+                            <th scope="row">1</th>
+                            <td>Diseñador grafico</td>
+                            <td>México-Puebla</td>
+                            <td>7-mdo</td>
                         </tr>
                         <tr>
-                            <td><p>Front end developer</p></td>
-                            <td><p>México &#124 Puebla</p></td>
-                            <td><p>255A</p></td>
+                            <th scope="row">2</th>
+                            <td>Front-end</td>
+                            <td>México-Puebla</td>
+                            <td>3-fxt</td>
                         </tr>
                         <tr>
-                            <td><p>Back end developer</p></td>
-                            <td><p>México &#124 Puebla</p></td>
-                            <td><p>609X</p></td>
+                            <th scope="row">3</th>
+                            <td>Back-end</td>
+                            <td>México-Puebla</td>
+                            <td>5-zwe</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <!--fin de la tabla-->
-        </main>
+        </div>
+    </main>
+        
+    <footer>
+        <div class="container-fluid  d-flex flex-column align-items-center contenedorFooter">
+            <p class="fs-5 text-center">&#174;fichitas 2022 Por Francisco Reyes Suarez</p>
+            <div class="iconos  mb-3 d-flex flex-row justify-content-around">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
 
-        <!--pie de pagina-->
-        <footer>
-            <div class="contenedorFooterFlex">
-                <p>&#174; fichitas 2022</p>
-                <p>por</p>
-                <p>Francisco Reyes Suarez</p>
-                <a href="#top">Subir</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                </svg>
+    
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg>
             </div>
-        </footer>
-    </div>
+            <a href="#top" class="p-2 rounded-pill text-center h6">Subir</a>
+        </div>
+    </footer>
+    
+    <!--script Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

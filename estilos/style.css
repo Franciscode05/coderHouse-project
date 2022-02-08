@@ -1,92 +1,28 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: content-box;
-}
-
-h1, h2, h3{
+.headerTitulo{
     font-family:"Fredoka One", arial;
-}
-
-p{
-    font-family: "Baloo 2", arial;
-}
-
-
-/*Estilo pagina inicio*/
-.contenedorGrid{
-    display: grid;
-    width: 95%;
-    margin:auto;
-    grid-template-columns: repeat(1,1fr);
-}
-
-
-.contenedorHeaderFlex{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-wrap: wrap;
-    background-color: white;
-}
-
-.subcontenedorLogoFlex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.subcontenedorLogoFlex h1{
     color:#3DB2FF;
-    font-size:70px;
 }
 
-.subcontenedorLogoFlex a img{
-    width: 100px;
-    border-radius: 100%;
+.imagenMuestra{
+    width:250px
 }
 
-.subcontenedorMenuFlex nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.contenedorMuestras{
+    height: 1000px;
+    background-color: #FF2442;
 }
 
-.subcontenedorMenuFlex nav a{
-    text-decoration: none;
-    color: black;
-    font-family:"Baloo 2", arial;
-    font-size: 25px;
-}
-
-.contenedorMainFlex{
-    display: flex;
-    flex-direction:column;
-}
-
-.subcontenedorMainFlex{
-    display: flex;
-    flex-direction: column;
+.contenedorMain{
     background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
-.subcontenedorMainFlex img{
-    width: 500px;
-    margin: auto;
-    padding: 50px 0;
+.contenedorMain h2, p{
+    color: #FFEDDA;
 }
 
-.subcontenedorMainFlex h2{
-    width: fit-content;
-    margin: auto;
-    text-align: center;
-    color: white;
-    font-size: 400%;
-    letter-spacing: 3px;
+.contenedorMain h2{
+    font-family:"Fredoka One", arial;
+    font-size: 40px;
     animation-duration: 3s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -105,258 +41,122 @@ p{
     }
 }
 
-.subcontenedorMainFlex p{
-    width: 80%;
-    margin: auto;
-    text-align:center;
-    color: white;
-    font-size: 150%;
-    padding-bottom: 40px;
-}
 
-.fichasMuestrasFlex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-image: url(../imgenes/fondoRojo.png);
-
-}
-
-.fichasMuestrasFlex a img{
-    width: 300px;
-    margin: 30px 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
-}
-
-.fichasMuestrasFlex a img:hover{  
+.contenedorMuestras img:hover{
     transform: translateY(-5px);
 }
 
-footer{
+.contenedorFooter{
     background-color: #FFB830;
 }
 
-.contenedorFooterFlex{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: fit-content;
-    height: 150px;
-    margin: auto;
-
-}
-
-.contenedorFooterFlex p{
-    color: white;
-}
-
-.contenedorFooterFlex a{
-    background-color: #FFEDDA;
+.contenedorFooter a{
     color: #3DB2FF;
-    font-family:"Fredoka One", arial;
-    border-radius: 10px;
-    text-align: center;
-    width: 80px;
+    background-color: #FFEDDA;
     text-decoration: none;
+    width: 100px;
 }
 
 
+/*contenido*/
 
-/*estilo pagina contenido*/
-.contenedorFlexHojas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.imagenDescarga{
+    width:250px
+}
+
+.contenedorDescarga{
+    height: 1100px;
     background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
-.cajaFlex{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-.cajaFlex img{
-    width: 300px;
-    margin-top: 40px ;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
-}
-
-.cajaFlex a{
-    width: 300px;
-    text-decoration: none;
-    text-align: center;
-    background-color: #FFEDDA;
-    color: #3DB2FF;
+.contenedorDescarga h2{
+    color: #FFEDDA;
     font-family:"Fredoka One", arial;
-    font-size: 30px;
-    border-radius: 20px;
-    margin: 40px 0;
-    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+    font-size: 40px;
 }
 
 .cajaFlex a:hover ~ img{
     transform: translateY(-5px);
 }
 
-/*estilo pagina Nosotros*/
-.contenedorPresentacion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(#3DB2FF, #036db4);
-}
-
-.contenedorPresentacion img{
-    width: 500px;
-    border-radius: 600px;
-    margin-top: 30px;
-}
-
-.contenedorPresentacion h2{
-    font-size: 30px;
-    color: #FFEDDA;
-    margin-top: 30px;
-}
-
-.contenedorPresentacion p{
-    text-align: center;
-    color: #FFEDDA;
-    width: 500px;
-    margin:30px 0;
-}
-
-/*estilo pagina Contacto*/
-
-.contenedorFormularioFlex{
-    background-image: linear-gradient(#3DB2FF, #036db4);
-}
-
-#subcontenedorFormulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#subcontenedorFormulario h2{
-    margin:10px 0;
-    font-size: 50px;
-    color: #FFEDDA;
-    letter-spacing: 3px;
-}
-
-
-.inputCorreo{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 10px 0;
-}
-
-.inputCorreo label{
-    text-align: center;
-}
-
-.inputMensaje{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 10px 0;
-}
-
-.inputMensaje label{
-    text-align: center;
-}
-
-.inputCheckbox{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.inputBoton{
-    display: flex;
-    flex-direction: column;
+.botonDescarga{
+    color: #3DB2FF;
+    background-color: #FFEDDA;
+    text-decoration: none;
     width: 250px;
+    font-size: 25px;
 }
 
-.inputBoton button{
-    margin: 10px 0;
-    border-radius: 50px;
-}
+/*Nosotros*/
 
-/*estilo pagina Empleo*/
-
-.contenedorTablaFlex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contenedorNosotros{
     background-image: linear-gradient(#3DB2FF, #036db4);
 }
 
-.contenedorTablaFlex h2{
+.contenedorNosotros h2{
+    font-family:"Fredoka One", arial;
     color: #FFEDDA;
-    margin: 20px 0;
     font-size: 40px;
 }
 
-.subcontenedorTabla table, th, td{
-    border: 1px solid #FFEDDA;
+.contenedorNosotros img{
+    width: 75%;
 }
 
-.subcontenedorTablaEncabezado p{
-    text-align: center;
-    width: 500px;
-    margin: 20px 0;
+/*contacto*/
+
+.contenedorFormulario{
+    background-color: #3DB2FF;
+}
+
+.contenedorFormulario{
     color: #FFEDDA;
 }
 
-.subcontenedorTabla table{
-    width: 500px;
-    height: 250px;
+.contenedorFormulario h2{
+    font-family:"Fredoka One", arial;
+    font-size: 4vw;
+}
+
+/*Empleo*/
+.subcontenedorTable{
+    background-image: linear-gradient(#3DB2FF, #036db4);
     color: #FFEDDA;
-    margin: 20px 0;
 }
 
-.subcontenedorTabla th, td{
-    text-align: center;
+.subcontenedorTable table{
+    color: #FFEDDA;
+}
+
+.subcontenedorTable h2{
+    font-family:"Fredoka One", arial;
+    font-size: 40px;
+}
+
+/*footer*/
+
+.iconos svg{
+    color: #FFEDDA;
+    width: 20px;
+    height: 20px;
+}
+
+.iconos{
+    width: 150px;
 }
 
 
-
-
-/* sección de media*/
-@media(max-width:858px){
-    .subcontenedorMenuFlex nav a{
-        text-decoration: none;
-        color: black;
-        font-family:"Baloo 2", arial;
-        font-size: 19px;
-    }
-    .subcontenedorLogoFlex a img{
-        display: none;
-    }
-    .subcontenedorLogoFlex{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
+/*Media*/
+@media(min-width:576px){
+    .contenedorMuestras{
+        height: 400px;
     }
 
-    .cajaFlex img{
-        width: 500px;
-        margin-top: 40px ;
-        border-radius: 10px;
-        box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+    .contenedorDescarga{
+        height:400px;
     }
-    
+
+    .contenedorNosotros img{
+        width: 50%;
+    }
 }
