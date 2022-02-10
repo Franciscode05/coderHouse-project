@@ -1,0 +1,117 @@
+.headerTitulo {
+  font-family: "Fredoka One", arial;
+  color: #3DB2FF; }
+
+.imagenMuestra {
+  width: 250px; }
+
+.contenedorMuestras {
+  height: 1000px;
+  background-color: #FF2442; }
+
+.contenedorMain {
+  background-image: linear-gradient(#3DB2FF, #036db4); }
+
+.contenedorMain h2, p {
+  color: #FFEDDA; }
+
+.contenedorMain h2 {
+  font-family: "Fredoka One", arial;
+  font-size: 40px;
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecer {
+  0% {
+    transform: translateY(3px); }
+  50% {
+    transform: translateY(-3px); }
+  100% {
+    transform: translateY(3px); } }
+
+.contenedorMuestras img:hover {
+  transform: translateY(-5px); }
+
+.contenedorFooter {
+  background-color: #FFB830; }
+
+.contenedorFooter a {
+  color: #3DB2FF;
+  background-color: #FFEDDA;
+  text-decoration: none;
+  width: 100px; }
+
+.iconos svg {
+  color: #FFEDDA;
+  width: 20px;
+  height: 20px; }
+
+.iconos {
+  width: 150px; }
+
+@media (min-width: 576px) {
+  .contenedorMuestras {
+    height: 400px; } }
+
+.imagenDescarga {
+  width: 250px; }
+
+.contenedorDescarga {
+  height: 1100px;
+  background-image: linear-gradient(#3DB2FF, #036db4); }
+
+.contenedorDescarga h2 {
+  color: #FFEDDA;
+  font-family: "Fredoka One", arial;
+  font-size: 40px; }
+
+.cajaFlex a:hover ~ img {
+  transform: translateY(-5px); }
+
+.botonDescarga {
+  color: #3DB2FF;
+  background-color: #FFEDDA;
+  text-decoration: none;
+  width: 250px;
+  font-size: 25px; }
+
+@media (min-width: 576px) {
+  .contenedorDescarga {
+    height: 400px; } }
+
+.contenedorNosotros {
+  background-image: linear-gradient(#3DB2FF, #036db4); }
+
+.contenedorNosotros h2 {
+  font-family: "Fredoka One", arial;
+  color: #FFEDDA;
+  font-size: 40px; }
+
+.contenedorNosotros img {
+  width: 75%; }
+
+@media (min-width: 576px) {
+  .contenedorNosotros img {
+    width: 50%; } }
+
+.contenedorFormulario {
+  background-color: #3DB2FF; }
+
+.contenedorFormulario {
+  color: #FFEDDA; }
+
+.contenedorFormulario h2 {
+  font-family: "Fredoka One", arial;
+  font-size: 250%; }
+
+.subcontenedorTable {
+  background-image: linear-gradient(#3DB2FF, #036db4);
+  color: #FFEDDA; }
+
+.subcontenedorTable table {
+  color: #FFEDDA; }
+
+.subcontenedorTable h2 {
+  font-family: "Fredoka One", arial;
+  font-size: 40px; }

@@ -1,0 +1,19 @@
+.contenedorNosotros{
+    background-image: $gradiente;
+}
+
+.contenedorNosotros h2{
+    font-family:$font-p;
+    color: $color-s1;
+    font-size: 40px;
+}
+
+.contenedorNosotros img{
+    width: 75%;
+}
+
+@media(min-width:576px){
+    .contenedorNosotros img{
+        width: 50%;
+    }
+}

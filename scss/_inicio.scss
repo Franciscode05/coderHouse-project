@@ -1,0 +1,74 @@
+.headerTitulo{
+    font-family:$font-p;
+    color:$color-p;
+}
+
+.imagenMuestra{
+    width:250px
+}
+
+.contenedorMuestras{
+    height: 1000px;
+    background-color: $color-s2;
+}
+
+.contenedorMain{
+    background-image: $gradiente;
+}
+
+.contenedorMain h2, p{
+    color: $color-s1;
+}
+
+.contenedorMain h2{
+    font-family:$font-p;
+    font-size: 40px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer{
+    0%{
+        transform: translateY(3px)
+    }
+    50%{
+        transform: translateY(-3px)
+    }
+
+    100%{
+        transform: translateY(3px);
+    }
+}
+
+
+.contenedorMuestras img:hover{
+    transform: translateY(-5px);
+}
+
+.contenedorFooter{
+    background-color: $color-s;
+}
+
+.contenedorFooter a{
+    color: $color-p;
+    background-color: $color-s1;
+    text-decoration: none;
+    width: 100px;
+}
+
+.iconos svg {
+    color: $color-s1;
+    width: 20px;
+    height: 20px;
+}
+
+.iconos{
+    width: 150px;
+}
+
+@media(min-width:576px){
+    .contenedorMuestras{
+        height: 400px;
+    }
+}

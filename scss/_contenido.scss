@@ -1,0 +1,32 @@
+.imagenDescarga{
+    width:250px
+}
+
+.contenedorDescarga{
+    height: 1100px;
+    background-image: $gradiente;
+}
+
+.contenedorDescarga h2{
+    color: $color-s1;
+    font-family:$font-p;
+    font-size: 40px;
+}
+
+.cajaFlex a:hover ~ img{
+    transform: translateY(-5px);
+}
+
+.botonDescarga{
+    color: $color-p;
+    background-color: $color-s1;
+    text-decoration: none;
+    width: 250px;
+    font-size: 25px;
+}
+
+@media(min-width:576px){
+    .contenedorDescarga{
+        height:400px;
+    }
+}
