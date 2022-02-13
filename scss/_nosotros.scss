@@ -3,9 +3,8 @@
 }
 
 .contenedorNosotros h2{
-    font-family:$font-p;
-    color: $color-s1;
-    font-size: 40px;
+    @include estilo(40px);
+    color: map-get($paleta, secundarioA);
 }
 
 .contenedorNosotros img{

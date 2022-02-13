@@ -1,12 +1,11 @@
 .contenedorFormulario{
-    background-color: $color-p;
+    background-color: map-get($paleta, primario);
 }
 
 .contenedorFormulario{
-    color: $color-s1;
+    color: map-get($paleta, secundarioA);
 }
 
 .contenedorFormulario h2{
-    font-family: $font-p;
-    font-size: 250%;
+    @include estilo(250%);
 }

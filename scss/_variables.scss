@@ -1,3 +1,4 @@
+/*variables*/
 $color-p:#3DB2FF;
 $color-s:#FFB830;
 $color-s1:#FFEDDA;
@@ -6,3 +7,25 @@ $color-s2:#FF2442;
 $gradiente: linear-gradient(#3DB2FF, #036db4);
 
 $font-p: "Fredoka One", arial;
+
+/*map*/
+$paleta:(
+    "primario":$color-p,
+    "secundario":$color-s,
+    "secundarioA":$color-s1,
+    "secundarioB":$color-s2
+);
+
+/*mixin*/
+@mixin estilo($fontSize){
+    font-family: $font-p;
+    font-size:$fontSize;
+}
+
+/*extend*/
+%iconoSvg{
+    color: map-get($paleta, secundarioA);
+    width: 20px;
+    height: 20px;
+}
+

@@ -1,3 +1,12 @@
+/*variables*/
+/*map*/
+/*mixin*/
+/*extend*/
+.iconos svg {
+  color: #FFEDDA;
+  width: 20px;
+  height: 20px; }
+
 .headerTitulo {
   font-family: "Fredoka One", arial;
   color: #3DB2FF; }
@@ -42,11 +51,6 @@
   text-decoration: none;
   width: 100px; }
 
-.iconos svg {
-  color: #FFEDDA;
-  width: 20px;
-  height: 20px; }
-
 .iconos {
   width: 150px; }
 
@@ -85,8 +89,8 @@
 
 .contenedorNosotros h2 {
   font-family: "Fredoka One", arial;
-  color: #FFEDDA;
-  font-size: 40px; }
+  font-size: 40px;
+  color: #FFEDDA; }
 
 .contenedorNosotros img {
   width: 75%; }

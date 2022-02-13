@@ -1,6 +1,6 @@
 .headerTitulo{
     font-family:$font-p;
-    color:$color-p;
+    color:map-get($paleta, primario);
 }
 
 .imagenMuestra{
@@ -9,7 +9,7 @@
 
 .contenedorMuestras{
     height: 1000px;
-    background-color: $color-s2;
+    background-color: map-get($paleta, secundarioB);
 }
 
 .contenedorMain{
@@ -17,12 +17,11 @@
 }
 
 .contenedorMain h2, p{
-    color: $color-s1;
+    color: map-get($paleta, secundarioA);
 }
 
 .contenedorMain h2{
-    font-family:$font-p;
-    font-size: 40px;
+    @include estilo(40px);
     animation-duration: 3s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -47,20 +46,18 @@
 }
 
 .contenedorFooter{
-    background-color: $color-s;
+    background-color: map-get($paleta, secundario);
 }
 
 .contenedorFooter a{
-    color: $color-p;
-    background-color: $color-s1;
+    color: map-get($paleta, primario);
+    background-color: map-get($paleta, secundarioA);
     text-decoration: none;
     width: 100px;
 }
 
 .iconos svg {
-    color: $color-s1;
-    width: 20px;
-    height: 20px;
+    @extend %iconoSvg;
 }
 
 .iconos{

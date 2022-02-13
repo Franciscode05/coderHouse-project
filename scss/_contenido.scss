@@ -9,8 +9,7 @@
 
 .contenedorDescarga h2{
     color: $color-s1;
-    font-family:$font-p;
-    font-size: 40px;
+    @include estilo(40px);
 }
 
 .cajaFlex a:hover ~ img{
@@ -18,8 +17,8 @@
 }
 
 .botonDescarga{
-    color: $color-p;
-    background-color: $color-s1;
+    color: map-get($paleta, primario);
+    background-color: map-get($paleta, secundarioA);
     text-decoration: none;
     width: 250px;
     font-size: 25px;
