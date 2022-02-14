@@ -1,14 +1,18 @@
 .contenedorNosotros{
     background-image: $gradiente;
-}
 
-.contenedorNosotros h2{
-    @include estilo(40px);
-    color: map-get($paleta, secundarioA);
-}
+    h2{
+        @include estilo(40px);
+        color: map-get($paleta, secundarioA);
+    }
 
-.contenedorNosotros img{
-    width: 75%;
+    img{
+        width: 75%;
+    }
+
+    p{
+        color: map-get($paleta , secundarioA );
+    }
 }
 
 @media(min-width:576px){

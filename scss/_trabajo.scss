@@ -1,12 +1,12 @@
 .subcontenedorTable{
     background-image: $gradiente;
     color: map-get($paleta, secundarioA);
-}
 
-.subcontenedorTable table{
-    color: map-get($paleta, secundarioA);
-}
+    table{
+        color: map-get($paleta, secundarioA);
+    }
 
-.subcontenedorTable h2{
-    @include estilo(40px);
+    h2{
+        @include estilo(40px);
+    }
 }

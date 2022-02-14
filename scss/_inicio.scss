@@ -14,17 +14,18 @@
 
 .contenedorMain{
     background-image: $gradiente;
-}
 
-.contenedorMain h2, p{
-    color: map-get($paleta, secundarioA);
-}
+    h2{
+        color: map-get($paleta, secundarioA);
+        @include estilo(40px);
+        animation-duration: 3s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+    }
 
-.contenedorMain h2{
-    @include estilo(40px);
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
+    p{
+        color: map-get($paleta, secundarioA);
+    }
 }
 
 @keyframes aparecer{
@@ -47,21 +48,25 @@
 
 .contenedorFooter{
     background-color: map-get($paleta, secundario);
-}
 
-.contenedorFooter a{
-    color: map-get($paleta, primario);
-    background-color: map-get($paleta, secundarioA);
-    text-decoration: none;
-    width: 100px;
-}
+    a{
+        color: map-get($paleta, primario);
+        background-color: map-get($paleta, secundarioA);
+        text-decoration: none;
+        width: 100px; 
+    }
 
-.iconos svg {
-    @extend %iconoSvg;
+    p{
+        color: map-get($paleta, secundarioA);
+    }
 }
 
 .iconos{
     width: 150px;
+
+    svg{
+        @extend %iconoSvg;
+    }
 }
 
 @media(min-width:576px){

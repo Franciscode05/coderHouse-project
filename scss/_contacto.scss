@@ -1,11 +1,8 @@
 .contenedorFormulario{
     background-color: map-get($paleta, primario);
-}
-
-.contenedorFormulario{
     color: map-get($paleta, secundarioA);
-}
 
-.contenedorFormulario h2{
-    @include estilo(250%);
+    h2{
+        @include estilo(250%);
+    }
 }

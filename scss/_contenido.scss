@@ -5,12 +5,14 @@
 .contenedorDescarga{
     height: 1100px;
     background-image: $gradiente;
+
+    h2{
+        color: $color-s1;
+        @include estilo(40px);
+    }
 }
 
-.contenedorDescarga h2{
-    color: $color-s1;
-    @include estilo(40px);
-}
+
 
 .cajaFlex a:hover ~ img{
     transform: translateY(-5px);
