@@ -1,6 +1,8 @@
 .contenedorFormulario{
+    border: 1px solid red;
     background-color: map-get($paleta, primario);
     color: map-get($paleta, secundarioA);
+    padding: 20px;
 
     h2{
         @include estilo(250%);

@@ -51,9 +51,12 @@
 
     a{
         color: map-get($paleta, primario);
-        background-color: map-get($paleta, secundarioA);
         text-decoration: none;
-        width: 100px; 
+        width: 100px;
+    }
+
+    .botonSubir{
+        background-color: map-get($paleta, secundarioA);
     }
 
     p{
@@ -64,10 +67,16 @@
 .iconos{
     width: 150px;
 
+    a{
+        width: 20px;
+    }
+    
     svg{
         @extend %iconoSvg;
     }
 }
+
+
 
 @media(min-width:576px){
     .contenedorMuestras{

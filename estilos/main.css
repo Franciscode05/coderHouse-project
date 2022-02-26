@@ -3,7 +3,7 @@
 /*mixin*/
 /*extend*/
 .iconos svg {
-  color: #FFEDDA;
+  fill: #FFEDDA;
   width: 20px;
   height: 20px; }
 
@@ -45,14 +45,17 @@
   background-color: #FFB830; }
   .contenedorFooter a {
     color: #3DB2FF;
-    background-color: #FFEDDA;
     text-decoration: none;
     width: 100px; }
+  .contenedorFooter .botonSubir {
+    background-color: #FFEDDA; }
   .contenedorFooter p {
     color: #FFEDDA; }
 
 .iconos {
   width: 150px; }
+  .iconos a {
+    width: 20px; }
 
 @media (min-width: 576px) {
   .contenedorMuestras {
@@ -99,8 +102,10 @@
     width: 50%; } }
 
 .contenedorFormulario {
+  border: 1px solid red;
   background-color: #3DB2FF;
-  color: #FFEDDA; }
+  color: #FFEDDA;
+  padding: 20px; }
   .contenedorFormulario h2 {
     font-family: "Fredoka One", arial;
     font-size: 250%; }

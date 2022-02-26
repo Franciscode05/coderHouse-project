@@ -24,7 +24,7 @@ $paleta:(
 
 /*extend*/
 %iconoSvg{
-    color: map-get($paleta, secundarioA);
+    fill: map-get($paleta, secundarioA);
     width: 20px;
     height: 20px;
 }
